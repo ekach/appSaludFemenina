@@ -191,19 +191,25 @@
       
       <div data-role="header">  
         <a href="#inicio" class="ui-btn ui-icon-home ui-btn-icon-left ui-corner-all">Inicio</a>
-        <h1 align="Right">Autoexamen</h1>
+         <h1>Autoexamen</h1>
         <div data-role="navbar">
           <ul>
-            <li><a href="#Pasos" class="ui-btn">Pasos</a></li>
-            <li><a href="#">Play</a></li>
-            <li><a href="#">Pause</a></li>
+            <li><a href="#Pasos" class="ui-btn ui-icon-bullets ui-btn-icon-left">Pasos</a></li>
+            <li><a href="#" onclick="document.getElementById('player').play();">Reproducir</a></li>
+            <li><a href="#" onclick="document.getElementById('player').pause();">Pausa</a></li>
           </ul>
         </div>
       </div>
 
       <div data-role="content">
+      <audio id="player" src="audio/MezclaVozPrelude6.mp3">
+      </audio>
         <div align="center">
           <img src="img/paso1.png"  class="img-responsive" width="250px" height="220px">
+          <div data-role="controlgroup" data-type="horizontal">
+            <a href="#" class="ui-btn ui-mini ui-icon-plus ui-btn-icon-left ui-corner-all" onclick="document.getElementById('player').volume += 0.1;"></a>
+            <a href="#" class="ui-btn ui-mini ui-icon-minus ui-btn-icon-right ui-corner-all" onclick="document.getElementById('player').volume -= 0.1;"></a>
+          </div>
         </div>
         <h2>Paso 1</h2>
         <div>
@@ -229,9 +235,9 @@
         <h1 align="Right">Autoexamen</h1>
         <div data-role="navbar">
           <ul>
-            <li><a href="#Pasos" class="ui-btn">Pasos</a></li>
-            <li><a href="#">Play</a></li>
-            <li><a href="#">Pause</a></li>
+            <li><a href="#Pasos" class="ui-icon-bullets ui-btn-icon-left">Pasos</a></li>
+            <li><a href="#" onclick="document.getElementById('player').play();">Reproducir</a></li>
+            <li><a href="#"onclick="document.getElementById('player').pause();">Pausa</a></li>
           </ul>
         </div>
       </div>
@@ -239,6 +245,10 @@
       <div data-role="content">
         <div align="center">
           <img src="img/paso2.png"  class="img-responsive" width="250px" height="220px">
+          <div data-role="controlgroup" data-type="horizontal">
+            <a href="#" class="ui-btn ui-mini ui-icon-plus ui-btn-icon-left ui-corner-all" onclick="document.getElementById('player').volume += 0.1;"></a>
+            <a href="#" class="ui-btn ui-mini ui-icon-minus ui-btn-icon-right ui-corner-all" onclick="document.getElementById('player').volume -= 0.1;"></a>
+          </div>
         </div>
         <h2>Paso 2</h2>
         <div>
@@ -264,9 +274,9 @@
         <h1 align="Right">Autoexamen</h1>
         <div data-role="navbar">
           <ul>
-            <li><a href="#Pasos" class="ui-btn">Pasos</a></li>
-            <li><a href="#">Play</a></li>
-            <li><a href="#">Pause</a></li>
+            <li><a href="#Pasos" class="ui-btn ui-icon-bullets ui-btn-icon-left">Pasos</a></li>
+            <li><a href="#" onclick="document.getElementById('player').play();">Reproducir</a></li>
+            <li><a href="#"onclick="document.getElementById('player').pause();">Pausa</a></li>
           </ul>
         </div>
       </div>
@@ -274,6 +284,10 @@
       <div data-role="content">
         <div align="center">
           <img src="img/paso3.png"  class="img-responsive" width="250px" height="220px">
+          <div data-role="controlgroup" data-type="horizontal">
+            <a href="#" class="ui-btn ui-mini ui-icon-plus ui-btn-icon-left ui-corner-all" onclick="document.getElementById('player').volume += 0.1;"></a>
+            <a href="#" class="ui-btn ui-mini ui-icon-minus ui-btn-icon-right ui-corner-all" onclick="document.getElementById('player').volume -= 0.1;"></a>
+          </div>
         </div>
         <h2>Paso 3</h2>
         <div>
@@ -299,9 +313,9 @@
         <h1 align="Right">Autoexamen</h1>
         <div data-role="navbar">
           <ul>
-            <li><a href="#Pasos" class="ui-btn">Pasos</a></li>
-            <li><a href="#">Play</a></li>
-            <li><a href="#">Pause</a></li>
+            <li><a href="#Pasos" class="ui-btn ui-icon-bullets ui-btn-icon-left">Pasos</a></li>
+            <li><a href="#"onclick="document.getElementById('player').play();">Reproducir</a></li>
+            <li><a href="#"onclick="document.getElementById('player').pause();">Pausa</a></li>
           </ul>
         </div>
       </div>
@@ -309,6 +323,10 @@
       <div data-role="content">
         <div align="center">
           <img src="img/paso4.png"  class="img-responsive" width="250px" height="220px">
+          <div data-role="controlgroup" data-type="horizontal">
+            <a href="#" class="ui-btn ui-mini ui-icon-plus ui-btn-icon-left ui-corner-all" onclick="document.getElementById('player').volume += 0.1;"></a>
+            <a href="#" class="ui-btn ui-mini ui-icon-minus ui-btn-icon-right ui-corner-all" onclick="document.getElementById('player').volume -= 0.1;"></a>
+          </div>
         </div>
         <h2>Paso 4</h2>
         <div>
@@ -334,9 +352,9 @@
         <h1 align="Right">Autoexamen</h1>
         <div data-role="navbar">
           <ul>
-            <li><a href="#Pasos" class="ui-btn">Pasos</a></li>
-            <li><a href="#">Play</a></li>
-            <li><a href="#">Pause</a></li>
+            <li><a href="#Pasos" class="ui-btn ui-icon-bullets ui-btn-icon-left">Pasos</a></li>
+            <li><a href="#"onclick="document.getElementById('player').play();">Reproducir</a></li>
+            <li><a href="#"onclick="document.getElementById('player').pause();">Pausa</a></li>
           </ul>
         </div>
       </div>
@@ -344,6 +362,10 @@
       <div data-role="content">
         <div align="center">
           <img src="img/paso5.png"  class="img-responsive" width="250px" height="220px">
+          <div data-role="controlgroup" data-type="horizontal">
+            <a href="#" class="ui-btn ui-mini ui-icon-plus ui-btn-icon-left ui-corner-all" onclick="document.getElementById('player').volume += 0.1;"></a>
+            <a href="#" class="ui-btn ui-mini ui-icon-minus ui-btn-icon-right ui-corner-all" onclick="document.getElementById('player').volume -= 0.1;"></a>
+          </div>
         </div>
         <h2>Paso 5</h2>
         <div>
@@ -369,9 +391,9 @@
         <h1 align="Right">Autoexamen</h1>
         <div data-role="navbar">
           <ul>
-            <li><a href="#Pasos" class="ui-btn">Pasos</a></li>
-            <li><a href="#">Play</a></li>
-            <li><a href="#">Pause</a></li>
+            <li><a href="#Pasos" class="ui-btn ui-icon-bullets ui-btn-icon-left">Pasos</a></li>
+            <li><a href="#"onclick="document.getElementById('player').play();">Reproducir</a></li>
+            <li><a href="#"onclick="document.getElementById('player').pause();">Pausa</a></li>
           </ul>
         </div>
       </div>
@@ -379,6 +401,10 @@
       <div data-role="content">
         <div align="center">
           <img src="img/paso6.png"  class="img-responsive" width="250px" height="220px">
+          <div data-role="controlgroup" data-type="horizontal">
+            <a href="#" class="ui-btn ui-mini ui-icon-plus ui-btn-icon-left ui-corner-all" onclick="document.getElementById('player').volume += 0.1;"></a>
+            <a href="#" class="ui-btn ui-mini ui-icon-minus ui-btn-icon-right ui-corner-all" onclick="document.getElementById('player').volume -= 0.1;"></a>
+          </div>
         </div>
         <h2>Paso 6</h2>
         <div>
