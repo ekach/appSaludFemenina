@@ -9,6 +9,7 @@
     		<link rel="stylesheet" href="js/jquery.mobile-1.4.5/jquery.mobile.structure-1.4.5.min.css"/>
         <link rel="stylesheet" type="text/css" href="css/bookblock.css" />
         <link rel="stylesheet" type="text/css" href="css/fuentes.css"></link>
+        <link rel="stylesheet" type="text/css" href="css/stilo.css"/>
         <!--<link rel="stylesheet" href="js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.css" />
         <link rel="stylesheet" href="js/jquery.mobile-1.4.5/jquery.mobile.theme-1.4.5.min.css" />-->
         <script src="js/jquery-1.12.3.min.js"></script>
@@ -48,10 +49,10 @@
           </nav>
          
          <div data-role="controlgroup" data-type="horizontal" align="center">
-            <a href="#" class="ui-btn ui-corner-all">
+            <a href="#Paso1" data-transition="flow" class="ui-btn ui-corner-all">
               <img src="img/autoexamen.jpg" class="img-responsive" width="100px" height="180px">
             </a>
-            <a href="#Anticonceptivos" class="ui-btn ui-corner-all">
+            <a href="#Anticonceptivos" data-transition="flow" class="ui-btn ui-corner-all">
               <img src="img/anticonceptivos.jpg" class="img-responsive" width="100px" height="180px"> 
             </a>   
         </div>
@@ -124,60 +125,268 @@
     <div data-role="footer">
             <h4>Copyright</h4>
     </div>
-
 </div>
 
 <!--fin-->
 
+<!--Segunda Actividad (anticonceptivos)-->
+
 <div data-role="page" id="Anticonceptivos" >
-      <div data-role="header">
-        
-  <a href="#inicio" class="ui-btn ui-icon-home ui-btn-icon-left ui-corner-all">Home</a>
-  <h1 align="Right"> </h1>
- </div>
-    <h2 align="Center">Métodos Anticonceptivos</h2>
+      <div data-role="header">  
+      <a href="#inicio" class="ui-btn ui-icon-home ui-btn-icon-left ui-corner-all">Inicio</a>
+      <h1 align="Right"> </h1>
+      </div>
+      <h2 align="Center">Métodos Anticonceptivos</h2>
+
+  <div data-role="content">
+    <div data-role="collapsible">
+      <h1>Condon Masculino</h1>
+      <img src="img/condonm.jpg " class="img-responsive" alt="image01" width="260px" height="145px"  /></a>
+      <p style="text-align: justify"> El condón es uno de los métodos anticonceptivos más populares y factibles en todo el mundo. El condón actúa capturando los espermatozoides a medida que éstos se liberan, impidiendo que entren a la vagina.
+      </p>
+    </div>
+
+    <div data-role="collapsible">
+      <h4>Condon Femenino</h4>
+      <img src="img/condonfe.jpg " class="img-responsive" alt="image01" width="260px" height="145px"  /></a>
+      <p style="text-align: justify"> los condones masculino y femenino actúan exactamente de la misma manera, la única diferencia es quién se lo pone, por fuera o por dentro. El condon femenino posee una delgada funda de poliuretano que crea una barrera entre el lugar de donde vienen los espermatozoides y el lugar al cual quieren llegar.
+      </p>
+    </div>
+
+    <div data-role="collapsible">
+      <h4>Píldoras Anticonceptivas</h4>
+      <img src="img/pil.jpg " class="img-responsive" alt="image01" width="260px" height="145px"  /></a>
+      <p style="text-align: justify"> La píldora es una tableta que se debe tomar una vez al día. Esta tableta combinada contiene estrógeno y progestina, que impiden que los ovarios liberen óvulos. También hacen que el moco cervical sea más espeso, lo que no permite que los espermatozoides lleguen al óvulo. La llamada mini-píldora contiene solo una hormona, una progestina, lo que ofrece una alternativa a aquellas mujeres a las que los estrógenos les afectan. 
+      </p>
+      <p style="text-align: justify">Debes tomar la píldora todos los días a la misma hora, tanto si tienes sexo como si no. Pregunta a tu médico si de acuerdo con tus antecedentes médicos, la píldora combinada es un método anticonceptivo adecuado para ti, si es así, pregunta qué tipo es mejor para ti.</p>
+    </div>
+
+    <div data-role="collapsible">
+      <h4>Anillo Hormonal</h4>
+      <img src="img/anillo.jpg " class="img-responsive" alt="image01" width="260px" height="145px"  /></a>
+      <p style="text-align: justify"> El anillo hormonal se parece mucho a una mezcla entre pulsera y banda elástica pero es mucho más listo que eso. Es un anillo claro y flexible de polietileno acetato de vinilo que, una vez colocado en la vagina, libera lentamente en tu cuerpo las hormonas progestina y estrógeno para impedir que los ovarios liberen óvulos. También hace que el moco cervical sea más espeso, lo que no permite que los espermatozoides lleguen al óvulo.</p>
+      <p style="text-align: justify">Lo mantienes puesto durante 3 semanas y después lo sacas, descansas una semana y después te pones otro. </p>
+    </div>
+
+    <div data-role="collapsible">
+      <h4>DIU</h4>
+      <img src="img/diu.jpg " class="img-responsive" alt="image01" width="260px" height="145px"  /></a>
+      <p style="text-align: justify">El DIU Podría parecer extraño pero es un pequeño dispositivo en forma de T altamente efectivo que contiene un hilo o cilindros de cobre que un profesional médico coloca dentro del útero. El DIU libera iones de cobre que inmovilizan a los espermatozoides y les hace difícil moverse dentro de la matriz, pero no impide que los ovarios formen un óvulo cada mes. </p>
+      <p style="text-align: justify">El DIU, una vez colocado dentro de la matriz, puede permanecer en su sitio hasta por 5 ó 10 años (dependiendo del tipo) o hasta que decidas extraerlo. </p>
+    </div>
+  </div> 
+</div>
+<!--fin-->
+
+<div data-role="page" id="Paso1" >
+      <div data-role="panel" id="Pasos" data-display="overlay"> 
+        <h4>Autoexamén de mama</h4>
+        <a href="#Paso1" data-rel="close" class="ui-btn ui-mini ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-back ui-btn-icon-left">Paso1</a>
+        <a href="#Paso2" data-rel="close" class="ui-btn ui-mini ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-back ui-btn-icon-left">Paso2</a>
+        <a href="#Paso3" data-rel="close" class="ui-btn ui-mini ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-back ui-btn-icon-left">Paso3</a>
+        <a href="#Paso4" data-rel="close" class="ui-btn ui-mini ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-back ui-btn-icon-left">Paso4</a>
+        <a href="#Paso5" data-rel="close" class="ui-btn ui-mini ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-back ui-btn-icon-left">Paso5</a>
+        <a href="#Paso6" data-rel="close" class="ui-btn ui-mini ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-back ui-btn-icon-left">Paso6</a>
+      </div> 
+      
+      <div data-role="header">  
+        <a href="#inicio" class="ui-btn ui-icon-home ui-btn-icon-left ui-corner-all">Inicio</a>
+        <h1 align="Right">Autoexamen</h1>
+        <div data-role="navbar">
+          <ul>
+            <li><a href="#Pasos" class="ui-btn">Pasos</a></li>
+            <li><a href="#">Play</a></li>
+            <li><a href="#">Pause</a></li>
+          </ul>
+        </div>
+      </div>
 
       <div data-role="content">
+        <div align="center">
+          <img src="img/paso1.png"  class="img-responsive" width="250px" height="220px">
+        </div>
+        <h2>Paso 1</h2>
+        <div>
+          <p style="text-align: justify">Con los brazos abajos, fijate si alguna de tus mamas esta deformada, si hay cambios en el color o si el pezon esta desviado o hundido.
+          </p>
+        </div>
+      </div>
+</div>  
 
-      <div data-role="collapsible">
-  <h1>Condon Masculino</h1>
-  <img src="img/condonm.jpg " class="img-responsive" alt="image01" width="260px" height="145px"  /></a>
-  <p style="text-align: justify"> El condón es uno de los métodos anticonceptivos más populares y factibles en todo el mundo. El condón actúa capturando los espermatozoides a medida que éstos se liberan, impidiendo que entren a la vagina.
-      </p>
- </div>
+<div data-role="page" id="Paso2" >
+     <div data-role="panel" id="Pasos" data-display="overlay"> 
+        <h4>Autoexamén de mama</h4>
+        <a href="#Paso1" data-rel="close" class="ui-btn ui-mini ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-back ui-btn-icon-left">Paso1</a>
+        <a href="#Paso2" data-rel="close" class="ui-btn ui-mini ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-back ui-btn-icon-left">Paso2</a>
+        <a href="#Paso3" data-rel="close" class="ui-btn ui-mini ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-back ui-btn-icon-left">Paso3</a>
+        <a href="#Paso4" data-rel="close" class="ui-btn ui-mini ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-back ui-btn-icon-left">Paso4</a>
+        <a href="#Paso5" data-rel="close" class="ui-btn ui-mini ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-back ui-btn-icon-left">Paso5</a>
+        <a href="#Paso6" data-rel="close" class="ui-btn ui-mini ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-back ui-btn-icon-left">Paso6</a>
+      </div> 
 
-      <div data-role="collapsible">
- <h4>Condon Femenino</h4>
-        <img src="img/condonfe.jpg " class="img-responsive" alt="image01" width="260px" height="145px"  /></a>
-        <p style="text-align: justify"> los condones masculino y femenino actúan exactamente de la misma manera, la única diferencia es quién se lo pone, por fuera o por dentro. El condon femenino posee una delgada funda de poliuretano que crea una barrera entre el lugar de donde vienen los espermatozoides y el lugar al cual quieren llegar.
-        </p>
- </div>
+      <div data-role="header">  
+        <a href="#inicio" class="ui-btn ui-icon-home ui-btn-icon-left ui-corner-all">Inicio</a>
+        <h1 align="Right">Autoexamen</h1>
+        <div data-role="navbar">
+          <ul>
+            <li><a href="#Pasos" class="ui-btn">Pasos</a></li>
+            <li><a href="#">Play</a></li>
+            <li><a href="#">Pause</a></li>
+          </ul>
+        </div>
+      </div>
 
-      <div data-role="collapsible">
-      <h4>Píldoras Anticonceptivas</h4>
-<img src="img/pil.jpg " class="img-responsive" alt="image01" width="260px" height="145px"  /></a>
-        <p style="text-align: justify"> La píldora es una tableta que se debe tomar una vez al día. Esta tableta combinada contiene estrógeno y progestina, que impiden que los ovarios liberen óvulos. También hacen que el moco cervical sea más espeso, lo que no permite que los espermatozoides lleguen al óvulo. La llamada mini-píldora contiene solo una hormona, una progestina, lo que ofrece una alternativa a aquellas mujeres a las que los estrógenos les afectan. 
-        </p>
-        <p style="text-align: justify">Debes tomar la píldora todos los días a la misma hora, tanto si tienes sexo como si no. Pregunta a tu médico si de acuerdo con tus antecedentes médicos, la píldora combinada es un método anticonceptivo adecuado para ti, si es así, pregunta qué tipo es mejor para ti.</p>
+      <div data-role="content">
+        <div align="center">
+          <img src="img/paso2.png"  class="img-responsive" width="250px" height="220px">
+        </div>
+        <h2>Paso 2</h2>
+        <div>
+          <p style="text-align: justify">Colocas las manos en las caderas y presiona firmemente. Inclinate un poco hacia adelante y busca alguno de los cambios mencionados.
+          </p>
+        </div>
+      </div>
+</div>          
 
- </div>
+<div data-role="page" id="Paso3" >
+     <div data-role="panel" id="Pasos" data-display="overlay"> 
+        <h4>Autoexamén de mama</h4>
+        <a href="#Paso1" data-rel="close" class="ui-btn ui-mini ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-back ui-btn-icon-left">Paso1</a>
+        <a href="#Paso2" data-rel="close" class="ui-btn ui-mini ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-back ui-btn-icon-left">Paso2</a>
+        <a href="#Paso3" data-rel="close" class="ui-btn ui-mini ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-back ui-btn-icon-left">Paso3</a>
+        <a href="#Paso4" data-rel="close" class="ui-btn ui-mini ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-back ui-btn-icon-left">Paso4</a>
+        <a href="#Paso5" data-rel="close" class="ui-btn ui-mini ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-back ui-btn-icon-left">Paso5</a>
+        <a href="#Paso6" data-rel="close" class="ui-btn ui-mini ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-back ui-btn-icon-left">Paso6</a>
+      </div> 
 
-      <div data-role="collapsible">
- <h4>Anillo Hormonal</h4>
-<img src="img/anillo.jpg " class="img-responsive" alt="image01" width="260px" height="145px"  /></a>
-        <p style="text-align: justify"> El anillo hormonal se parece mucho a una mezcla entre pulsera y banda elástica pero es mucho más listo que eso. Es un anillo claro y flexible de polietileno acetato de vinilo que, una vez colocado en la vagina, libera lentamente en tu cuerpo las hormonas progestina y estrógeno para impedir que los ovarios liberen óvulos. También hace que el moco cervical sea más espeso, lo que no permite que los espermatozoides lleguen al óvulo.</p>
-        <p style="text-align: justify">Lo mantienes puesto durante 3 semanas y después lo sacas, descansas una semana y después te pones otro. </p>
- </div>
+      <div data-role="header">  
+        <a href="#inicio" class="ui-btn ui-icon-home ui-btn-icon-left ui-corner-all">Inicio</a>
+        <h1 align="Right">Autoexamen</h1>
+        <div data-role="navbar">
+          <ul>
+            <li><a href="#Pasos" class="ui-btn">Pasos</a></li>
+            <li><a href="#">Play</a></li>
+            <li><a href="#">Pause</a></li>
+          </ul>
+        </div>
+      </div>
 
- <div data-role="collapsible">
- <h4>DIU</h4>
-<img src="img/diu.jpg " class="img-responsive" alt="image01" width="260px" height="145px"  /></a>
-        <p style="text-align: justify">El DIU Podría parecer extraño pero es un pequeño dispositivo en forma de T altamente efectivo que contiene un hilo o cilindros de cobre que un profesional médico coloca dentro del útero. El DIU libera iones de cobre que inmovilizan a los espermatozoides y les hace difícil moverse dentro de la matriz, pero no impide que los ovarios formen un óvulo cada mes. </p>
-        <p style="text-align: justify">El DIU, una vez colocado dentro de la matriz, puede permanecer en su sitio hasta por 5 ó 10 años (dependiendo del tipo) o hasta que decidas extraerlo. </p>
- </div>
+      <div data-role="content">
+        <div align="center">
+          <img src="img/paso3.png"  class="img-responsive" width="250px" height="220px">
+        </div>
+        <h2>Paso 3</h2>
+        <div>
+          <p style="text-align: justify">Ahora observa los cambios con los brazos extendidos hacia arriba.
+          </p>
+        </div>
+      </div>
+</div>   
 
+<div data-role="page" id="Paso4" >
+     <div data-role="panel" id="Pasos" data-display="overlay"> 
+        <h4>Autoexamén de mama</h4>
+        <a href="#Paso1" data-rel="close" class="ui-btn ui-mini ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-back ui-btn-icon-left">Paso1</a>
+        <a href="#Paso2" data-rel="close" class="ui-btn ui-mini ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-back ui-btn-icon-left">Paso2</a>
+        <a href="#Paso3" data-rel="close" class="ui-btn ui-mini ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-back ui-btn-icon-left">Paso3</a>
+        <a href="#Paso4" data-rel="close" class="ui-btn ui-mini ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-back ui-btn-icon-left">Paso4</a>
+        <a href="#Paso5" data-rel="close" class="ui-btn ui-mini ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-back ui-btn-icon-left">Paso5</a>
+        <a href="#Paso6" data-rel="close" class="ui-btn ui-mini ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-back ui-btn-icon-left">Paso6</a>
+      </div> 
 
+      <div data-role="header">  
+        <a href="#inicio" class="ui-btn ui-icon-home ui-btn-icon-left ui-corner-all">Inicio</a>
+        <h1 align="Right">Autoexamen</h1>
+        <div data-role="navbar">
+          <ul>
+            <li><a href="#Pasos" class="ui-btn">Pasos</a></li>
+            <li><a href="#">Play</a></li>
+            <li><a href="#">Pause</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div data-role="content">
+        <div align="center">
+          <img src="img/paso4.png"  class="img-responsive" width="250px" height="220px">
+        </div>
+        <h2>Paso 4</h2>
+        <div>
+          <p style="text-align: justify">De pie con una mano detras de la cabeza, explora toda la mama con movimientos circulares, empezando por la axila hasta el pezón.
+          </p>
+        </div>
+      </div>
 </div>
+
+<div data-role="page" id="Paso5" >
+     <div data-role="panel" id="Pasos" data-display="overlay"> 
+        <h4>Autoexamén de mama</h4>
+        <a href="#Paso1" data-rel="close" class="ui-btn ui-mini ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-back ui-btn-icon-left">Paso1</a>
+        <a href="#Paso2" data-rel="close" class="ui-btn ui-mini ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-back ui-btn-icon-left">Paso2</a>
+        <a href="#Paso3" data-rel="close" class="ui-btn ui-mini ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-back ui-btn-icon-left">Paso3</a>
+        <a href="#Paso4" data-rel="close" class="ui-btn ui-mini ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-back ui-btn-icon-left">Paso4</a>
+        <a href="#Paso5" data-rel="close" class="ui-btn ui-mini ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-back ui-btn-icon-left">Paso5</a>
+        <a href="#Paso6" data-rel="close" class="ui-btn ui-mini ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-back ui-btn-icon-left">Paso6</a>
+      </div> 
+
+      <div data-role="header">  
+        <a href="#inicio" class="ui-btn ui-icon-home ui-btn-icon-left ui-corner-all">Inicio</a>
+        <h1 align="Right">Autoexamen</h1>
+        <div data-role="navbar">
+          <ul>
+            <li><a href="#Pasos" class="ui-btn">Pasos</a></li>
+            <li><a href="#">Play</a></li>
+            <li><a href="#">Pause</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div data-role="content">
+        <div align="center">
+          <img src="img/paso5.png"  class="img-responsive" width="250px" height="220px">
+        </div>
+        <h2>Paso 5</h2>
+        <div>
+          <p style="text-align: justify">Efectúa todas las maniobras anteriores, pero ahora acostada con una almohada bajo tu espalda.
+          </p>
+        </div>
+      </div>
+</div> 
+
+<div data-role="page" id="Paso6" >
+     <div data-role="panel" id="Pasos" data-display="overlay"> 
+        <h4>Autoexamén de mama</h4>
+        <a href="#Paso1" data-rel="close" class="ui-btn ui-mini ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-back ui-btn-icon-left">Paso1</a>
+        <a href="#Paso2" data-rel="close" class="ui-btn ui-mini ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-back ui-btn-icon-left">Paso2</a>
+        <a href="#Paso3" data-rel="close" class="ui-btn ui-mini ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-back ui-btn-icon-left">Paso3</a>
+        <a href="#Paso4" data-rel="close" class="ui-btn ui-mini ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-back ui-btn-icon-left">Paso4</a>
+        <a href="#Paso5" data-rel="close" class="ui-btn ui-mini ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-back ui-btn-icon-left">Paso5</a>
+        <a href="#Paso6" data-rel="close" class="ui-btn ui-mini ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-back ui-btn-icon-left">Paso6</a>
+      </div> 
+
+      <div data-role="header">  
+        <a href="#inicio" class="ui-btn ui-icon-home ui-btn-icon-left ui-corner-all">Inicio</a>
+        <h1 align="Right">Autoexamen</h1>
+        <div data-role="navbar">
+          <ul>
+            <li><a href="#Pasos" class="ui-btn">Pasos</a></li>
+            <li><a href="#">Play</a></li>
+            <li><a href="#">Pause</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div data-role="content">
+        <div align="center">
+          <img src="img/paso6.png"  class="img-responsive" width="250px" height="220px">
+        </div>
+        <h2>Paso 6</h2>
+        <div>
+          <p style="text-align: justify">Termina tu exploración apretando el pezón y observa si hay salida de liquido anormal.
+          </p>
+        </div>
+      </div>
+</div>              
 
 </body>
 </html>
