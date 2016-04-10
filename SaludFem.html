@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>saludFem</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0" />
+       	<link rel="stylesheet" href="themes/appSaludFem.min.css" />
+    		<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+    		<link rel="stylesheet" href="js/jquery.mobile-1.4.5/jquery.mobile.structure-1.4.5.min.css"/>
+        <link rel="stylesheet" type="text/css" href="css/bookblock.css" />
+        <link rel="stylesheet" type="text/css" href="css/fuentes.css"></link>
+        <!--<link rel="stylesheet" href="js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.css" />
+        <link rel="stylesheet" href="js/jquery.mobile-1.4.5/jquery.mobile.theme-1.4.5.min.css" />-->
+        <script src="js/jquery-1.12.3.min.js"></script>
+        <script src="js/jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/modernizr.custom.js"></script>
+        <script src="js/jquerypp.custom.js"></script>
+        <script src="js/jquery.bookblock.js"></script>
+</head>
+<body>
+	
+	
+<!--Actividad Principal-->
+
+  <div data-role="page" id="inicio" >
+    	<div data-role="header">
+   			<h1> Salud </h1>
+   		</div>
+      
+   		<div data-role="content">
+            <div class="jumbotron" align="center">
+              <div id="bb-bookblock" class="bb-bookblock">
+                <div class="bb-item">
+                  <img src="img/imagen1.jpg " class="img-responsive" alt="image01" width="280px" height="90px"  /></a>
+                </div>
+                <div class="bb-item">
+                  <img src="img/imagen2.jpg " alt="image02" width="280px" height="90px"/></a>
+                </div>
+              </div>
+            </div>
+
+            <nav>
+            <div data-role="controlgroup" data-type="horizontal" align="center">
+              <a id="bb-nav-prev" href="#" class="ui-btn ui-mini ui-icon-arrow-l ui-btn-icon-bottom ui-shadow ui-corner-all ui-alt-icon"> </a>
+              <a id="bb-nav-next" href="#" class="ui-btn ui-mini ui-icon-arrow-r ui-btn-icon-bottom ui-shadow ui-corner-all ui-alt-icon"> </a>
+            </div>        
+          </nav>
+         
+         <div data-role="controlgroup" data-type="horizontal" align="center">
+            <a href="#" class="ui-btn ui-corner-all">
+              <img src="img/autoexamen.jpg" class="img-responsive" width="100px" height="180px">
+            </a>
+            <a href="#Anticonceptivos" class="ui-btn ui-corner-all">
+              <img src="img/anticonceptivos.jpg" class="img-responsive" width="100px" height="180px"> 
+            </a>   
+        </div>
+    </div>
+   
+    <script>
+      var Page = (function() {
+        
+        var config = {
+            $bookBlock : $( '#bb-bookblock' ),
+            $navNext : $( '#bb-nav-next' ),
+            $navPrev : $( '#bb-nav-prev' ),
+            $navFirst : $( '#bb-nav-first' ),
+            $navLast : $( '#bb-nav-last' )
+          },
+          init = function() {
+            config.$bookBlock.bookblock( {
+              speed : 800,
+              shadowSides : 0.8,
+              shadowFlip : 0.7
+            } );
+            initEvents();
+          },
+          initEvents = function() {
+            
+            var $slides = config.$bookBlock.children();
+
+            // add navigation events
+            config.$navNext.on( 'click touchstart', function() {
+              config.$bookBlock.bookblock( 'next' );
+              return false;
+            } );
+
+            config.$navPrev.on( 'click touchstart', function() {
+              config.$bookBlock.bookblock( 'prev' );
+              return false;
+            } );
+
+            config.$navFirst.on( 'click touchstart', function() {
+              config.$bookBlock.bookblock( 'first' );
+              return false;
+            } );
+
+            config.$navLast.on( 'click touchstart', function() {
+              config.$bookBlock.bookblock( 'last' );
+              return false;
+            } );
+            
+            // add swipe events
+            $slides.on( {
+              'swipeleft' : function( event ) {
+                config.$bookBlock.bookblock( 'next' );
+                return false;
+              },
+              'swiperight' : function( event ) {
+                config.$bookBlock.bookblock( 'prev' );
+                return false;
+              }
+            } );
+          };
+
+          return { init : init };
+
+      })();
+    </script>
+    <script>
+        Page.init();
+    </script>
+
+    <div data-role="footer">
+            <h4>Copyright</h4>
+    </div>
+
+</div>
+
+<!--fin-->
+
+<div data-role="page" id="Anticonceptivos" >
+      <div data-role="header">
+        
+  <a href="#inicio" class="ui-btn ui-icon-home ui-btn-icon-left ui-corner-all">Home</a>
+  <h1 align="Right"> </h1>
+ </div>
+    <h2 align="Center">Métodos Anticonceptivos</h2>
+
+      <div data-role="content">
+
+      <div data-role="collapsible">
+  <h1>Condon Masculino</h1>
+  <img src="img/condonm.jpg " class="img-responsive" alt="image01" width="260px" height="145px"  /></a>
+  <p style="text-align: justify"> El condón es uno de los métodos anticonceptivos más populares y factibles en todo el mundo. El condón actúa capturando los espermatozoides a medida que éstos se liberan, impidiendo que entren a la vagina.
+      </p>
+ </div>
+
+      <div data-role="collapsible">
+ <h4>Condon Femenino</h4>
+        <img src="img/condonfe.jpg " class="img-responsive" alt="image01" width="260px" height="145px"  /></a>
+        <p style="text-align: justify"> los condones masculino y femenino actúan exactamente de la misma manera, la única diferencia es quién se lo pone, por fuera o por dentro. El condon femenino posee una delgada funda de poliuretano que crea una barrera entre el lugar de donde vienen los espermatozoides y el lugar al cual quieren llegar.
+        </p>
+ </div>
+
+      <div data-role="collapsible">
+      <h4>Píldoras Anticonceptivas</h4>
+<img src="img/pil.jpg " class="img-responsive" alt="image01" width="260px" height="145px"  /></a>
+        <p style="text-align: justify"> La píldora es una tableta que se debe tomar una vez al día. Esta tableta combinada contiene estrógeno y progestina, que impiden que los ovarios liberen óvulos. También hacen que el moco cervical sea más espeso, lo que no permite que los espermatozoides lleguen al óvulo. La llamada mini-píldora contiene solo una hormona, una progestina, lo que ofrece una alternativa a aquellas mujeres a las que los estrógenos les afectan. 
+        </p>
+        <p style="text-align: justify">Debes tomar la píldora todos los días a la misma hora, tanto si tienes sexo como si no. Pregunta a tu médico si de acuerdo con tus antecedentes médicos, la píldora combinada es un método anticonceptivo adecuado para ti, si es así, pregunta qué tipo es mejor para ti.</p>
+
+ </div>
+
+      <div data-role="collapsible">
+ <h4>Anillo Hormonal</h4>
+<img src="img/anillo.jpg " class="img-responsive" alt="image01" width="260px" height="145px"  /></a>
+        <p style="text-align: justify"> El anillo hormonal se parece mucho a una mezcla entre pulsera y banda elástica pero es mucho más listo que eso. Es un anillo claro y flexible de polietileno acetato de vinilo que, una vez colocado en la vagina, libera lentamente en tu cuerpo las hormonas progestina y estrógeno para impedir que los ovarios liberen óvulos. También hace que el moco cervical sea más espeso, lo que no permite que los espermatozoides lleguen al óvulo.</p>
+        <p style="text-align: justify">Lo mantienes puesto durante 3 semanas y después lo sacas, descansas una semana y después te pones otro. </p>
+ </div>
+
+ <div data-role="collapsible">
+ <h4>DIU</h4>
+<img src="img/diu.jpg " class="img-responsive" alt="image01" width="260px" height="145px"  /></a>
+        <p style="text-align: justify">El DIU Podría parecer extraño pero es un pequeño dispositivo en forma de T altamente efectivo que contiene un hilo o cilindros de cobre que un profesional médico coloca dentro del útero. El DIU libera iones de cobre que inmovilizan a los espermatozoides y les hace difícil moverse dentro de la matriz, pero no impide que los ovarios formen un óvulo cada mes. </p>
+        <p style="text-align: justify">El DIU, una vez colocado dentro de la matriz, puede permanecer en su sitio hasta por 5 ó 10 años (dependiendo del tipo) o hasta que decidas extraerlo. </p>
+ </div>
+
+
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+        
